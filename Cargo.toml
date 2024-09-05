@@ -1,0 +1,20 @@
+[package]
+name = "w-boson"
+description = "Windows port of backtrace-on-stack-overflow"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mtshiba/w-boson"
+version = "0.1.0"
+edition = "2021"
+authors = ["Shunsuke Shibayama <sbym1346@gmail.com>"]
+
+[dependencies]
+windows = { version = "0.58", features = [
+    "Win32",
+    "Win32_System",
+    "Win32_System_Diagnostics",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_SystemServices",
+    "Win32_System_Threading",
+    "Win32_System_WindowsProgramming",
+    "Win32_System_Kernel",
+] }
