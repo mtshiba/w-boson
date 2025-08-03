@@ -29,6 +29,9 @@ To get the correct function names even in the release build, add the following s
 debug = true
 ```
 
+It has been found that some applications using rayon etc. may not display backtraces correctly.
+In this case, we recommend using [WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/windbg-overview).
+
 ## License
 
 MIT & Apache-2.0
